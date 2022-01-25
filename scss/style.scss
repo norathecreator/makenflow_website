@@ -1,0 +1,40 @@
+
+/*//COLORS*/
+
+$primaryColor: #F0EAD6;
+$secondaryColor: #606C38; /*#C2BD8F*/
+
+/*//MIXINS*/
+
+@mixin flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@import '_reset.scss';
+@import 'font.scss';
+
+@import 'main_block.scss';
+@import 'about.scss';
+@import 'shop.scss';
+@import 'customers.scss';
+@import 'contacts.scss';
+
+/*@media(max-width: 1200px){
+  .main_block header .container{
+    min-width: 75%;
+  }
+}
+
+@media (max-width: 900px){
+  .about{
+    flex-direction: row;
+  }
+  .shop_card{
+    flex-direction: row;
+  }
+  .customers{
+
+  }
+}*/

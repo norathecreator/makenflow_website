@@ -1,0 +1,370 @@
+/*//COLORS*/
+/*#C2BD8F*/
+/*//MIXINS*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Wilden", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #606C38;
+  border-radius: 20px;
+  border: 3px solid #f2f2f2;
+}
+
+@font-face {
+  font-family: Wilden, Baloo Bhaijaan 2, Merriweather;
+  src: url(../fonts/wilden.otf);
+}
+.main_block {
+  width: 100%;
+  height: 100vh;
+  background: #F0EAD6;
+}
+
+.main_block header {
+  width: 100%;
+  /*background: pink;*/
+  border-bottom: 3px solid white;
+}
+
+.main_block header .container {
+  width: 75%;
+  min-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.main_block header .container > a img {
+  margin-left: 20px;
+}
+
+.main_block header .container menu {
+  width: 765px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_block header .container menu li {
+  padding: 40px 0;
+  color: #E19865;
+  font-size: 21px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_block header .container menu li :hover {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_block .home_page {
+  width: 100%;
+  height: 100%;
+  /*max-width: 1260px;*/
+  margin: 0 auto;
+  background: url("../img/img6.jpg") no-repeat center/cover;
+}
+.main_block .home_page article {
+  text-align: center;
+  /*background: yellow;*/
+  padding: 20px 0;
+}
+.main_block .home_page article h1 {
+  color: #606C38;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.home_page article h2 {
+  color: #606C38;
+  font-family: "Merriweather", light;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.home_page article h3 {
+  color: #606C38;
+  font-size: 16px;
+  font-family: "Baloo Bhaijaan 2", regular;
+  margin-bottom: 65px;
+}
+
+.home_page article a {
+  font-weight: 500px;
+  font-size: 25px;
+  color: #FFF;
+  background-color: #606C38;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+.home_page article a:hover {
+  background-color: #F0EAD6;
+  color: #606C38;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background: #FFF;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.about h1 {
+  color: #606C38;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.about p {
+  color: #606C38;
+  font-size: 16px;
+  font-family: "Baloo Bhaijaan 2", regular;
+  padding-bottom: 20px;
+}
+
+.about a {
+  color: #E1AE89;
+}
+
+.about a:hover {
+  color: #606C38;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.shop {
+  min-height: 100vh;
+  background-color: #F9F6EC;
+  text-align: center;
+  margin-top: -200px;
+  padding: 32px;
+}
+
+.shop h1 {
+  color: #606C38;
+  font-size: 40px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+}
+
+.shop .shop_card {
+  width: 80%;
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.shop .shop_card nav {
+  margin-bottom: 40px;
+}
+
+.shop .shop_img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 250px;
+}
+
+.shop .shop_card h2 {
+  color: #606C38;
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-top: 5px;
+}
+
+.shop .shop_card p {
+  color: #E1AE89;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.shop .shop_card a {
+  font-weight: 500px;
+  font-size: 18px;
+  color: #FFF;
+  background-color: #606C38;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+.shop .shop_card a:hover {
+  background-color: #E1AE89;
+  color: #606C38;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.customers {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+
+.customers h1 {
+  color: #606C38;
+  font-size: 40px;
+  margin-bottom: 16px;
+  margin-top: 50px;
+}
+
+.reviews {
+  width: 70%;
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.reviews .customer_reviews {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 250px;
+}
+
+.reviews nav:nth-child(2) {
+  padding: 30px 10px;
+}
+
+.reviews nav:nth-child(2) h2 {
+  font-family: "Baloo Bhaijaan 2", regular;
+  font-size: 20px;
+}
+
+.reviews nav:nth-child(2) p {
+  font-family: "Merriweather", light;
+  font-size: 16px;
+}
+
+.contact_us {
+  width: 100%;
+  background-color: #F9F6EC;
+  padding-bottom: 15px;
+}
+
+.contact_us container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact_us section {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.contact_us h1 {
+  color: #606C38;
+  padding-bottom: 5px;
+}
+
+.contact_us a {
+  font-family: "Baloo Bhaijaan 2", regular;
+}
+
+/*@media(max-width: 1200px){
+  .main_block header .container{
+    min-width: 75%;
+  }
+}
+
+@media (max-width: 900px){
+  .about{
+    flex-direction: row;
+  }
+  .shop_card{
+    flex-direction: row;
+  }
+  .customers{
+
+  }
+}*/

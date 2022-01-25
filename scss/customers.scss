@@ -1,0 +1,47 @@
+.customers{
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+.customers h1{
+  color: $secondaryColor;
+  font-size: 40px;
+  margin-bottom: 16px;
+  margin-top: 50px;
+}
+
+.reviews{
+  width: 70%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.reviews nav:first-nth-child{
+ 
+}
+
+.reviews .customer_reviews{
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+
+}
+
+.reviews nav:nth-child(2){
+  padding: 30px 10px;
+}
+
+.reviews nav:nth-child(2) h2{
+  font-family: 'Baloo Bhaijaan 2', regular;
+  font-size: 20px;
+}
+.reviews nav:nth-child(2) p{
+  font-family: 'Merriweather', light;
+  font-size: 16px;
+}

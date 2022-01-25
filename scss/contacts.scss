@@ -1,0 +1,28 @@
+.contact_us{
+  width: 100%;
+  background-color: #F9F6EC;
+  padding-bottom: 15px;
+}
+.contact_us container{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+}
+.contact_us section{
+  width: 50%;
+  margin-top: 20px;
+}
+.contact_us nav{
+
+
+}
+.contact_us h1{
+  color: $secondaryColor;
+  padding-bottom: 5px;
+}
+.contact_us a{
+  font-family: 'Baloo Bhaijaan 2', regular;
+}

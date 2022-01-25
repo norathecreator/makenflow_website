@@ -1,0 +1,93 @@
+.main_block{
+  width: 100%;
+  height: 100vh;
+  background: #F0EAD6;
+}
+
+.main_block header{
+	width: 100%;
+	/*background: pink;*/
+	border-bottom: 3px solid white;
+}
+
+.main_block header .container{
+	width: 75%;
+	min-width: 1110px;
+	@include flex;
+	margin: 0 auto;
+}
+.main_block header .container > a img{
+	margin-left: 20px;
+}
+
+.main_block header .container menu{
+	width: 765px;
+	@include flex;
+}	
+
+.main_block header .container menu li{
+	padding: 40px 0;
+	color: #E19865;
+    font-size: 21px;
+	border-bottom: 4px solid rgba(0,0,0,0);
+	transition: 0.3s;
+}
+
+.main_block header .container menu li :hover{
+	color: #fff;
+	cursor: pointer;
+	border-bottom: 4px solid rgba(0,0,0,0);
+	transition: 0.3s;
+}
+
+.main_block .home_page{
+    width: 100%;
+    height: 100%;
+    /*max-width: 1260px;*/
+    margin: 0 auto;
+    background: url("../img/img6.jpg") no-repeat center/cover;
+ 
+    article{
+	    text-align: center;
+	    /*background: yellow;*/
+	    padding: 20px 0;
+
+        h1{
+   	        color: $secondaryColor;
+   	        font-size: 30px;
+   	        margin-bottom: 16px;
+        }
+    }
+}
+
+.home_page article h2{
+   	color: $secondaryColor;
+   	font-family: 'Merriweather', light;
+   	font-size: 13px;
+   	margin-bottom: 20px;
+}
+
+.home_page article h3{
+
+	color: $secondaryColor;
+	font-size: 16px;
+	font-family: 'Baloo Bhaijaan 2', regular;
+	margin-bottom: 65px;
+}
+
+.home_page article a{
+
+	font-weight: 500px;
+	font-size: 25px;
+	color: #FFF;
+	background-color: $secondaryColor;
+	border-radius: 30px;
+	padding: 10px 25px;
+}
+
+.home_page article a:hover{
+
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    transition: background-color .3s;
+}
